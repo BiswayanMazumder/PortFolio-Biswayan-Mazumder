@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.webbody{
+  height: 100vh;
+  /* width: 100vw; */
+  display: flex;
+  font-family: sans-serif;
+  font-size: 40px;
+  color: white;
+}
+
+.bdvcbdbvh{
+  width: 100vw;
+  height: 100vh;
+  background-color: #999D9E;
+  display: flex;
+  justify-content: star;
+  align-items: center;
+  flex-direction: column;
+}
+.ndbvjdbnv{
+  width: 95vw;
+  height: 50vh;
+  background-color: white;
+}
+.homebody::-webkit-scrollbar{
+  display: none;
+}
+.jdndv{
+  position: absolute;
+  width: 100vw;
+  height: 70px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  z-index: 999;
+  flex-direction: row;
+}
+.ndnvdv{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+/* Define the wobble effect */
+@keyframes wobble {
+  0% { transform: translateX(0); }
+  15% { transform: translateX(-5px); }
+  30% { transform: translateX(5px); }
+  45% { transform: translateX(-5px); }
+  60% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+/* Apply wobble effect on hover */
+.dnjndjn:hover {
+  animation: wobble 0.5s ease-in-out;
+}
+
+/* Optional: Add smooth transition to text */
+.dnjndjn {
+  transition: transform 0.5s ease-in-out;
+}
