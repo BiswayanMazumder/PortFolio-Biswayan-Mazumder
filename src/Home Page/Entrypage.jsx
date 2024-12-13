@@ -65,7 +65,33 @@ export default function Entrypage() {
                 </div>
                 <img src="https://g1uudlawy6t63z36.public.blob.vercel-storage.com/e64edd025438449584ac6c481eafa22d.png" alt="hbdhbhb" height={"100%"} />
             </div>
-            <div className="ndbvjdbnv"></div>
+            <div className="ndbvjdbnv">
+                <div className="bhbdnvjd">
+                    <div className="mdnvnd">
+                        I craft seamless digital experiences that make an impact.
+                        Let’s push the boundaries and set new standards together.
+                        No gimmicks, just clean, cutting-edge solutions.
+                    </div>
+                    <div className="dnjdn">
+                        <div className="mdnv">
+                            The combination of my passion for design, code & interaction positions me in a unique place in the web design world.
+                        </div>
+                        <Link style={{ textDecoration: 'none', color: 'white' }}>
+                            <div className="about">
+                                About Me
+                            </div>
+                        </Link>
+                    </div>
+                </div>
+                <div className="recentworks">
+                    <div className="jdnvnv" style={{ color: 'grey',fontSize:'12px' }}>
+                    Recent work
+                    </div>
+                    <div className="divider">
+
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
