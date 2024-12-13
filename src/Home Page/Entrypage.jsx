@@ -13,6 +13,7 @@ export default function Entrypage() {
                         style={{ textDecoration: 'none', color: 'white' }}
                         onMouseEnter={() => setHover(true)}
                         onMouseLeave={() => setHover(false)}
+                        to={'/'}
                     >
                         <div
                             className="ndnvdv"
@@ -89,6 +90,16 @@ export default function Entrypage() {
                     </div>
                     <div className="divider"></div>
                     <div className="dnfjndjn">
+                        <div className="dnndmvns">
+                            <div
+                                className="nndjvnjdvn"
+                                onClick={() => window.open("https://vistaride.vercel.app", "_blank")}
+                            >
+                                View Site
+                            </div>
+
+                            <img src="https://g1uudlawy6t63z36.public.blob.vercel-storage.com/vistaride.png" alt="" height={"300px"} width={"500px"} />
+                        </div>
                         <div className="kcmd">
                             VistaRide
                         </div>
@@ -98,6 +109,16 @@ export default function Entrypage() {
                     </div>
                     <div className="divider" style={{ position: 'relative', top: '50px' }}></div>
                     <div className="dnfjndjn">
+                        <div className="dnndmvns">
+                            <div
+                                className="nndjvnjdvn"
+                                onClick={() => window.open("https://vistafeedd.vercel.app", "_blank")}
+                            >
+                                View Site
+                            </div>
+
+                            <img src="https://g1uudlawy6t63z36.public.blob.vercel-storage.com/vistafeedd.png" alt="" height={"300px"} width={"500px"} />
+                        </div>
                         <div className="kcmd" style={{ position: 'relative', top: '50px' }}>
                             VistaFeedd
                         </div>
@@ -107,6 +128,16 @@ export default function Entrypage() {
                     </div>
                     <div className="divider" style={{ position: 'relative', top: '100px' }}></div>
                     <div className="dnfjndjn" style={{ position: "relative", marginBottom: "50px" }}>
+                    <div className="dnndmvns">
+                            <div
+                                className="nndjvnjdvn"
+                                onClick={() => window.open("https://vidtubee.vercel.app", "_blank")}
+                            >
+                                View Site
+                            </div>
+
+                            <img src="https://g1uudlawy6t63z36.public.blob.vercel-storage.com/vidtubee.png" alt="" height={"300px"} width={"500px"} />
+                        </div>
                         <div className="kcmd" style={{ position: 'relative', top: '100px' }}>
                             VidTube
                         </div>

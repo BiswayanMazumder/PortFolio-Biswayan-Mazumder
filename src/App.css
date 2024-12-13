@@ -109,7 +109,7 @@ body{
   font-weight: 500;
 }
 /* Define the wobble effect */
-@keyframes wobble {
+@keyframes wobbling {
   0% { transform: translateX(0); }
   15% { transform: translateX(-5px); }
   30% { transform: translateX(5px); }
@@ -121,7 +121,7 @@ body{
 
 /* Apply wobble effect on hover */
 .dnjndjn:hover {
-  animation: wobble 0.5s ease-in-out;
+  animation: wobbling 0.5s ease-in-out;
 }
 
 /* Optional: Add smooth transition to text */
@@ -314,6 +314,49 @@ body::-webkit-scrollbar{
 }
 .dnfjndjn:hover{
   color: grey;
+}
+
+.dnndmvns {
+  position: absolute; /* Position it relative to its nearest positioned ancestor */
+  top: -10; /* Place it at the top of the parent */
+  left: 20%; /* Place it at the left of the parent */
+  width: 600px; /* Adjust width as needed */
+  z-index: 1; /* Ensure it's on top if needed */
+  height: 400px;
+  background: linear-gradient(to right, #ffffff, #f2f2f2);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid grey;
+}
+
+.kcmd {
+  position: relative; /* Optionally, to ensure proper stacking order */
+  z-index: 0; /* Ensures that this stays below .dnndmvns if necessary */
+}
+.dnfjndjn:hover{
+  color: grey;
+  .dnndmvns{
+    display: flex;
+  }
+}
+.nndjvnjdvn{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: rgb(101, 101, 199);
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  color: white;
+}
+.nndjvnjdvn:hover{
+  background-color: blue;
 }
 .nnjdn{
   width: 100vw;
