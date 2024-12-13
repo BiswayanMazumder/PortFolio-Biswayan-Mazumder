@@ -61,7 +61,7 @@ body{
 }
 
 .slide-up-animation {
-  animation: slideUp 0.5s ease-out forwards; /* Slide-up animation */
+  animation: slideUp 1s ease-out forwards; /* Slide-up animation */
 }
 
 @keyframes slideUp {
@@ -212,7 +212,6 @@ body::-webkit-scrollbar{
   border-radius: 50%;
   position: relative;
   margin-top: 50px;
-  /* margin-bottom: 50px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -220,64 +219,61 @@ body::-webkit-scrollbar{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
   font-weight: 300;
-  color: white;
+  color: white; /* Default text color */
   z-index: 2; /* Keep the text above the animated background */
   overflow: hidden; /* Prevent overflow of the animated background */
+  transition: color 0.3s ease; /* Smooth transition for text color */
 }
 
-/* Create the blue fill effect with pseudo-element */
-.about::before {
+.about::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, transparent 50%, blue 50%); /* Initially half transparent, half blue */
-  transform: translateY(100%); /* Initially position the fill below the element */
-  z-index: -1; /* Set a lower z-index to place the blue background behind the text */
-  transition: transform 0.1s ease, background 0.1s ease; /* Smooth transition for the filling effect */
+  background-color: blue;
+  transform: translateY(100%); /* Initially set the blue to start at the bottom */
+  transition: transform 1s ease-out; /* Smoothly move the blue background up when hovering out */
+  border-radius: 50%; /* Ensure the pseudo-element has rounded corners */
+  z-index: -1; /* Ensure the blue fill is behind the text */
 }
+
+.about:hover::after {
+  transform: translateY(0); /* On hover, make the blue color fill the div */
+  animation: wobble 1s ease-out forwards; /* Apply wobble effect */
+}
+
 .about:hover {
-  animation: wobble 0.5s ease-in-out;
+  color: white; /* Change text color to white when hovered */
 }
-/* Wobbly animation for the blue fill */
-@keyframes wobbleUp {
+
+@keyframes wobble {
   0% {
-    transform: translateY(100%) scaleX(1.5); /* Start from below */
-    background: linear-gradient(180deg, transparent 50%, blue 50%); /* Start half-transparent */
+    transform: translateY(100%) scaleX(1); /* Initial state, below the div */
   }
   25% {
-    transform: translateY(85%) scaleX(1.3) skewX(15deg);
-    background: linear-gradient(180deg, transparent 60%, blue 40%); /* Gradually fill more blue */
+    transform: translateY(10%) scaleX(1.1); /* Stretch and move up slightly */
   }
   50% {
-    transform: translateY(60%) scaleX(1.1) skewX(-10deg);
-    background: linear-gradient(180deg, transparent 70%, blue 30%); /* Fill more */
+    transform: translateY(-5%) scaleX(0.9); /* Slight shrink */
   }
   75% {
-    transform: translateY(30%) scaleX(1.2) skewX(5deg);
-    background: linear-gradient(180deg, transparent 80%, blue 20%); /* Near full fill */
+    transform: translateY(10%) scaleX(1.05); /* Stretch more */
   }
   100% {
-    transform: translateY(0) scaleX(1) skewX(0deg);
-    background: linear-gradient(180deg, transparent 0%, blue 100%); /* Fully filled */
+    transform: translateY(0) scaleX(1); /* Final state, fully stretched and filling the div */
   }
 }
 
-/* Hover effect */
-.about:hover::before {
-  animation: wobbleUp 0.5s ease-in-out forwards; /* Trigger the wobble effect on hover */
-  transform: translateY(0); /* Full fill position when hovered */
-  background: linear-gradient(180deg, transparent 0%, blue 100%); /* Fully blue on hover */
-}
 .recentworks{
   width: 100vw;
-  height: 500px;
+  /* height: 500px; */
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 200px;
   align-items: center;
 }
 .jdnvnv{
@@ -299,4 +295,87 @@ body::-webkit-scrollbar{
   height: 0.8px;
   background-color: #D2D2D2;
   margin-top: 50px;
+}
+.dnfjndjn{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 60px;
+  /* font-weight: 100; */
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  /* gap: 50px; */
+  width: 80vw;
+  left: 50px;
+  top:50px;
+  flex-direction: row;
+}
+.dnfjndjn:hover{
+  color: grey;
+}
+.nnjdn{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 70px; */
+  position: relative;
+  top: 150px;
+  padding-bottom: 200px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.bhfjvn {
+  height: 80px;
+  width: 180px;
+  position: relative;
+  border: 0.5px solid grey;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  border-radius: 50px;
+  overflow: hidden; /* Hide overflow to make sure the animation stays inside */
+  transition: border-color 0.3s ease; /* Optional: smooth transition for border color */
+}
+
+.bhfjvn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  transform: translateY(100%); /* Initially set the blue to start at the bottom */
+  transition: transform 1s ease-out; /* Smoothly move the blue background up when hovering out */
+  border-radius: 50px; /* Make sure the pseudo-element has rounded corners */
+  z-index: -1; /* Ensure the blue fill is behind the text */
+}
+
+.bhfjvn:hover::after {
+  transform: translateY(0); /* On hover, make the blue color fill the div */
+  animation: wobble 1s ease-out forwards; /* Apply wobble effect */
+}
+.bhfjvn:hover {
+  color: white; /* Change text color to white when hovered */
+}
+@keyframes wobble {
+  0% {
+    transform: translateY(100%) scaleX(1); /* Initial state, below the div */
+  }
+  25% {
+    transform: translateY(10%) scaleX(1.1); /* Stretch and move up slightly */
+  }
+  50% {
+    transform: translateY(-5%) scaleX(0.9); /* Slight shrink */
+  }
+  75% {
+    transform: translateY(10%) scaleX(1.05); /* Stretch more */
+  }
+  100% {
+    transform: translateY(0) scaleX(1); /* Final state, fully stretched and filling the div */
+  }
 }

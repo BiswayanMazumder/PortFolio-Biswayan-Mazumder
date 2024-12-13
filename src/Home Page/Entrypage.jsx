@@ -84,11 +84,41 @@ export default function Entrypage() {
                     </div>
                 </div>
                 <div className="recentworks">
-                    <div className="jdnvnv" style={{ color: 'grey',fontSize:'12px' }}>
-                    Recent work
+                    <div className="jdnvnv" style={{ color: 'grey', fontSize: '12px' }}>
+                        Recent work
                     </div>
-                    <div className="divider">
-
+                    <div className="divider"></div>
+                    <div className="dnfjndjn">
+                        <div className="kcmd">
+                            VistaRide
+                        </div>
+                        <div className="kcmd" style={{ fontSize: '15px', marginRight: '100px' }}>
+                            Interaction, Design & Development
+                        </div>
+                    </div>
+                    <div className="divider" style={{ position: 'relative', top: '50px' }}></div>
+                    <div className="dnfjndjn">
+                        <div className="kcmd" style={{ position: 'relative', top: '50px' }}>
+                            VistaFeedd
+                        </div>
+                        <div className="kcmd" style={{ position: 'relative', fontSize: '15px', marginRight: '100px', top: '50px' }}>
+                            Interaction, Design & Development
+                        </div>
+                    </div>
+                    <div className="divider" style={{ position: 'relative', top: '100px' }}></div>
+                    <div className="dnfjndjn" style={{ position: "relative", marginBottom: "50px" }}>
+                        <div className="kcmd" style={{ position: 'relative', top: '100px' }}>
+                            VidTube
+                        </div>
+                        <div className="kcmd" style={{ position: 'relative', fontSize: '15px', marginRight: '100px', top: '100px' }}>
+                            Interaction, Design & Development
+                        </div>
+                    </div>
+                    <div className="divider" style={{ position: 'relative', top: '100px' }}></div>
+                </div>
+                <div className="nnjdn">
+                    <div className="bhfjvn">
+                        More work
                     </div>
                 </div>
             </div>
