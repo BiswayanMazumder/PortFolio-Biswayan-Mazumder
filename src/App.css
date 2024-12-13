@@ -151,3 +151,6 @@ body{
   top: 45vh;
   left: 70vw;
 }
+body::-webkit-scrollbar{
+  display: none;
+}
