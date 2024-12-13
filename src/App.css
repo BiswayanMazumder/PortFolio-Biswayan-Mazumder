@@ -48,6 +48,32 @@ body{
   font-size: 40px;
   color: white;
 }
+/* Homepage.css */
+.webbody {
+  background-color: #1c1d20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  height: 100vh;
+  position: relative;
+}
+
+.slide-up-animation {
+  animation: slideUp 0.5s ease-out forwards; /* Slide-up animation */
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%); /* Start from the bottom */
+    opacity: 0; /* Initially invisible */
+  }
+  to {
+    transform: translateY(0); /* End at the normal position */
+    opacity: 1; /* Fully visible */
+  }
+}
 
 .bdvcbdbvh{
   width: 100vw;
