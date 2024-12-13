@@ -422,3 +422,24 @@ body::-webkit-scrollbar{
     transform: translateY(0) scaleX(1); /* Final state, fully stretched and filling the div */
   }
 }
+.ehnjnd{
+  position: absolute;
+  left: 150px;
+  top: 160px;
+}
+.dnjdnvjd{
+  color: black;
+  width: 40vw;
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.hdbvdbvjd{
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background-color: blue;
+  position: absolute;
+  top: 120px;
+  z-index: 5;
+  left: 90%;
+}

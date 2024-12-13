@@ -7,6 +7,8 @@ import {
 } from 'react-router-dom';
 import Homepage from './Home Page/homepage';
 import Entrypage from './Home Page/Entrypage';
+import WorkPage from './Work Page/work';
+import AboutPage from './Work Page/work';
 
 function App() {
   return (
@@ -15,7 +17,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
       </Routes>
       <Routes>
-        <Route path="/home" element={<Entrypage />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
     </BrowserRouter>
   );

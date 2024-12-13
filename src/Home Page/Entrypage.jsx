@@ -23,12 +23,12 @@ export default function Entrypage() {
                         </div>
                     </Link>
                     <div className="ndnvdv" style={{ marginRight: '20px', width: '300px', display: 'flex', justifyContent: 'space-evenly', flexDirection: 'row' }}>
-                        <Link style={{ textDecoration: 'none', color: 'white' }}>
+                        <Link style={{ textDecoration: 'none', color: 'white' }} >
                             <div className='dnjndjn'>
                                 Work
                             </div>
                         </Link>
-                        <Link style={{ textDecoration: 'none', color: 'white' }}>
+                        <Link style={{ textDecoration: 'none', color: 'white' }} to={'/about'}>
                             <div className='dnjndjn'>
                                 About
                             </div>
