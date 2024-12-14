@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Entrypage from '../Home Page/Entrypage';
-import WorkPageDetails from './WorkPages';
+import AboutPageDetails from './AboutPages';
 
 export default function AboutPage() {
     const [movetodetails,setmovetodetails] =useState(false);
@@ -14,7 +13,7 @@ export default function AboutPage() {
     
   return (
    movetodetails?<div className="slide-up-animation">
-           <WorkPageDetails />
+           <AboutPageDetails />
          </div>: <div className='slide-up-animation'>
       <div
         className="webbody"

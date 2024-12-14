@@ -77,7 +77,7 @@ export default function Entrypage() {
                         <div className="mdnv">
                             The combination of my passion for design, code & interaction positions me in a unique place in the web design world.
                         </div>
-                        <Link style={{ textDecoration: 'none', color: 'white' }}>
+                        <Link style={{ textDecoration: 'none', color: 'white' }} to={'/about'}>
                             <div className="about">
                                 About Me
                             </div>

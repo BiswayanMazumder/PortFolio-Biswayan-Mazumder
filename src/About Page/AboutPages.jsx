@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 
-export default function WorkPageDetails() {
+export default function AboutPageDetails() {
     const [hover, setHover] = useState(false);
     return (
         <div className='webbody' style={{ backgroundColor: "white" }}>

@@ -6,9 +6,7 @@ import {
   Route
 } from 'react-router-dom';
 import Homepage from './Home Page/homepage';
-import Entrypage from './Home Page/Entrypage';
-import WorkPage from './Work Page/work';
-import AboutPage from './Work Page/work';
+import AboutPage from './About Page/about';
 
 function App() {
   return (
