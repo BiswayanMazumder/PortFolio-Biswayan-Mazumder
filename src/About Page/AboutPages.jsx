@@ -11,6 +11,12 @@ export default function AboutPageDetails() {
     const containerRef2 = useRef(null);
     const containerRef3 = useRef(null);
     const [hover, setHover] = useState(false);
+    const [subject, setSubject] = useState('Greetings');
+  const [body, setBody] = useState('Hello, I wanted to reach out about...');
+
+  const generateMailtoLink = () => {
+    return `mailto:biswayanmazumder77@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  };
     return (
         <div className='webbody' style={{ backgroundColor: "white" }}>
             <div className="jdndv" style={{ top: '0' }}>
@@ -43,11 +49,11 @@ export default function AboutPageDetails() {
                             </div>
                         </div>
                     </Link>
-                    <Link style={{ textDecoration: 'none', color: 'black' }}>
+                    <a style={{ textDecoration: 'none', color: 'black' }} href={generateMailtoLink()}>
                         <div className='dnjndjn' style={{ fontSize: '15px' }}>
                             Contact
                         </div>
-                    </Link>
+                    </a>
                 </div>
             </div>
             <div className="ehnjnd">

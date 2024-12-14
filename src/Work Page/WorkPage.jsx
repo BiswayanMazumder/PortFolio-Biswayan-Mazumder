@@ -4,6 +4,12 @@ import { Link } from 'react-router-dom';
 export default function WorkPageDetails() {
     const [hoveredtab, sethoveredtab] = useState('WEBSITE');
     const [hover, setHover] = useState(false);
+    const [subject, setSubject] = useState('Greetings');
+  const [body, setBody] = useState('Hello, I wanted to reach out about...');
+
+  const generateMailtoLink = () => {
+    return `mailto:biswayanmazumder77@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  };
     return (
         <div className='webbody' style={{ backgroundColor: "white" }}>
             <div className="jdndv" style={{ top: '0' }}>
@@ -39,11 +45,11 @@ export default function WorkPageDetails() {
 
                         </div>
                     </Link>
-                    <Link style={{ textDecoration: 'none', color: 'black' }}>
+                    <a style={{ textDecoration: 'none', color: 'black' }} href={generateMailtoLink()}>
                         <div className='dnjndjn' style={{ fontSize: '15px' }}>
                             Contact
                         </div>
-                    </Link>
+                    </a>
                 </div>
             </div>
             <div className="nbbfvbfv">
