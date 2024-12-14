@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 
 export default function WorkPageDetails() {
+    const [hoveredtab,sethoveredtab]=useState('WEBSITE');
     const [hover, setHover] = useState(false);
     return (
         <div className='webbody' style={{ backgroundColor: "white" }}>
@@ -45,7 +46,21 @@ export default function WorkPageDetails() {
                     </Link>
                 </div>
             </div>
-            <div className="hgvbb">
+            <div className="nbbfvbfv">
+                <div className="ndbvbfndvb" style={{display:'flex',flexDirection:'row',gap:'80px'}}>
+                    <div className="bhfjvns" style={{width:'150px',fontSize:'20px',backgroundColor:hoveredtab=='WEBSITE'?'black':'white',color:hoveredtab=='WEBSITE'?'white':'black'}} onClick={()=>{
+                        sethoveredtab('WEBSITE');
+                    }}>
+                    Websites
+                    </div>
+                    <div className="bhfjvns" style={{width:'150px',fontSize:'20px',backgroundColor:hoveredtab=='MOBILE'?'black':'white',color:hoveredtab=='MOBILE'?'white':'black'}} onClick={()=>{
+                        sethoveredtab('MOBILE');
+                    }}>
+                    Mobile Apps
+                    </div>
+                </div>
+            </div>
+            {hoveredtab=='WEBSITE'?(<div className="hgvbb">
             
                 <div className="dnfjndjn">
                     <div className="dnndmvns">
@@ -155,7 +170,7 @@ export default function WorkPageDetails() {
                         Interaction, Design & Development
                     </div>
                 </div>
-            </div>
+            </div>):<></>}
         </div>
     )
 }
