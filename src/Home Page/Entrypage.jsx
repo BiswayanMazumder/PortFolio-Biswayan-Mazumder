@@ -64,7 +64,7 @@ export default function Entrypage() {
                 <div className='dnjndjnq'>
                     Web Developer
                 </div>
-                <img src="https://g1uudlawy6t63z36.public.blob.vercel-storage.com/e64edd025438449584ac6c481eafa22d.png" alt="hbdhbhb" height={"100%"} />
+                <img src="https://g1uudlawy6t63z36.public.blob.vercel-storage.com/e64edd025438449584ac6c481eafa22d.png" alt="Biswayan Mazumder" height={"100%"} />
             </div>
             <div className="ndbvjdbnv">
                 <div className="bhbdnvjd">
