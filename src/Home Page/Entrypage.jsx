@@ -128,7 +128,7 @@ export default function Entrypage() {
                     </div>
                     <div className="divider" style={{ position: 'relative', top: '100px' }}></div>
                     <div className="dnfjndjn" style={{ position: "relative", marginBottom: "50px" }}>
-                    <div className="dnndmvns">
+                        <div className="dnndmvns">
                             <div
                                 className="nndjvnjdvn"
                                 onClick={() => window.open("https://vidtubee.vercel.app", "_blank")}
@@ -147,11 +147,13 @@ export default function Entrypage() {
                     </div>
                     <div className="divider" style={{ position: 'relative', top: '100px' }}></div>
                 </div>
+                <Link style={{ textDecoration: 'none', color: 'black' }} to={'/work'}>
                 <div className="nnjdn">
                     <div className="bhfjvn">
                         More work
                     </div>
                 </div>
+                </Link>
             </div>
         </div>
     )
