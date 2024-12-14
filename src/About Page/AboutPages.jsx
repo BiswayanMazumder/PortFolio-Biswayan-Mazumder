@@ -1,7 +1,15 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { Link } from 'react-router-dom';
-
+import * as THREE from 'three';
+import ThreeJSShader from '../threejs';
 export default function AboutPageDetails() {
+    const [isHovered1, setIsHovered1] = useState(false);
+    const [isHovered2, setIsHovered2] = useState(false);
+    const [isHovered3, setIsHovered3] = useState(false);
+    const containerRef = useRef(null);
+    const containerRef1 = useRef(null);
+    const containerRef2 = useRef(null);
+    const containerRef3 = useRef(null);
     const [hover, setHover] = useState(false);
     return (
         <div className='webbody' style={{ backgroundColor: "white" }}>
@@ -225,6 +233,70 @@ export default function AboutPageDetails() {
                 <br />
                 <div className="divider"></div>
                 <br />
+                <div className="mdnjvndvn">
+                    <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1">
+                        <title>arrow-up-right</title>
+                        <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+                            <g transform="translate(-1019.000000, -279.000000)" stroke="#000000" strokeWidth="1.5">
+                                <g transform="translate(1026.000000, 286.000000) rotate(90.000000) translate(-1026.000000, -286.000000) translate(1020.000000, 280.000000)">
+                                    <polyline points="2.76923077 0 12 0 12 9.23076923"></polyline>
+                                    <line x1="12" y1="0" x2="0" y2="12"></line>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <span className="animated-dots">I can help you with<span className="dot">.</span><span className="dot">.</span><span className="dot">.</span></span>
+                </div>
+                <div className="ndjnjdnv">
+                    {/* First container with its own ref */}
+                    <div className="fnjvnfjv" ref={containerRef1}
+                    >
+                        <ThreeJSShader containerRef={containerRef1} />
+                        <div className="mdnvd" style={{ color: "white", zIndex: '5', position: 'absolute' }}>
+                            STEP 1
+                        </div>
+                        <div className="jhhvhv" style={{ color: "white", zIndex: '6', position: 'absolute', flexDirection: 'column', gap: '20px' }}>
+                            <div style={{ width: '50%', fontWeight: '700', fontSize: '22px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                                <center>Requirement Gathering</center>
+                            </div>
+                            <div style={{ width: '70%', fontWeight: '500', fontSize: '15px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                                <center>We'll work together to define your website's/app's goals, audience, and features, ensuring a clear structure and navigation plan.</center>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Second container with its own ref */}
+                    <div className="fnjvnfjv" ref={containerRef2}>
+                        <ThreeJSShader containerRef={containerRef2} />
+                        <div className="mdnvd" style={{ color: "white", zIndex: '5', position: 'absolute' }}>
+                            STEP 2
+                        </div>
+                        <div className="jhhvhv" style={{ color: "white", zIndex: '6', position: 'absolute', flexDirection: 'column', gap: '20px' }}>
+                            <div style={{ width: '50%', fontWeight: '700', fontSize: '22px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                                <center>Development of Website/App</center>
+                            </div>
+                            <div style={{ width: '70%', fontWeight: '500', fontSize: '15px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                                <center>After finalizing the plan, I begin coding, keeping you updated at each stage, from concept to working app/software.</center>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Third container with its own ref */}
+                    <div className="fnjvnfjv" ref={containerRef3}>
+                        <ThreeJSShader containerRef={containerRef3} />
+                        <div className="mdnvd" style={{ color: "white", zIndex: '5', position: 'absolute' }}>
+                            STEP 3
+                        </div>
+                        <div className="jhhvhv" style={{ color: "white", zIndex: '6', position: 'absolute', flexDirection: 'column', gap: '20px' }}>
+                            <div style={{ width: '50%', fontWeight: '700', fontSize: '22px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                                <center>Testing & Deployment</center>
+                            </div>
+                            <div style={{ width: '70%', fontWeight: '500', fontSize: '15px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                                <center>I'll ensure your app is fully functional and bug-free, then deploy it live for users, making sure it's ready for real-world use.</center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )
