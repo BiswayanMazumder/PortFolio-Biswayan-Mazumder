@@ -28,12 +28,12 @@ export default function AboutPageDetails() {
                     </div>
                 </Link>
                 <div className="ndnvdv" style={{ marginRight: '20px', width: '300px', display: 'flex', justifyContent: 'space-evenly', flexDirection: 'row' }}>
-                    <Link style={{ textDecoration: 'none', color: 'black' }}>
-                        <div className='dnjndjn' style={{ fontSize: '15px' }}>
+                    <Link style={{ textDecoration: 'none', color: 'black' }} to={'/work'}>
+                        <div className='dnjndjn' style={{ fontSize: '15px' }} >
                             Work
                         </div>
                     </Link>
-                    <Link style={{ textDecoration: 'none', color: 'black' }} to={'/about'}>
+                    <Link style={{ textDecoration: 'none', color: 'black' }}>
                         <div className='dnjndjn' style={{ fontSize: '15px', display: 'flex', flexDirection: 'column', position: 'relative' }}>
                             <div>
                                 About

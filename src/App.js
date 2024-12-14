@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import Homepage from './Home Page/homepage';
 import AboutPage from './About Page/about';
+import WorkPage from './Work Page/work';
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
       </Routes>
       <Routes>
         <Route path="/about" element={<AboutPage />} />
+      </Routes>
+      <Routes>
+        <Route path="/work" element={<WorkPage />} />
       </Routes>
     </BrowserRouter>
   );
