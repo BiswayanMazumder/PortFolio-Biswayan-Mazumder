@@ -245,7 +245,7 @@ export default function AboutPageDetails() {
                             </g>
                         </g>
                     </svg>
-                    <span className="animated-dots">I can help you with<span className="dot">.</span><span className="dot">.</span><span className="dot">.</span></span>
+                    <span className="animated-dots">My Development Approach<span className="dot">.</span><span className="dot">.</span><span className="dot">.</span></span>
                 </div>
                 <div className="ndjnjdnv">
                     {/* First container with its own ref */}
