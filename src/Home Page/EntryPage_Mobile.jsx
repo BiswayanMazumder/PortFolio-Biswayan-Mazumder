@@ -11,7 +11,7 @@ export default function EntryPage_Mobile() {
     return (
         <div className='homebody'>
             {menuvisible ? <div className='slide-up-animation'>
-                <div className="webbody" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'start'}}>
+                <div className="webbody" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'start',width:'100vw',height:'100vh',overflow:'hidden'}}>
                     <div className="dbvbdhv" onClick={() => setmenuvisible(false)}>
                         <svg fill="white" height="20px" width="20px" version="1.1" id="Capa_1" viewBox="0 0 490 490">
                             <polygon points="456.851,0 245,212.564 33.149,0 0.708,32.337 212.669,245.004 0.708,457.678 33.149,490 245,277.443 456.851,490 489.292,457.678 277.331,245.004 489.292,32.337 " />
@@ -21,8 +21,19 @@ export default function EntryPage_Mobile() {
                         Navigation
                     </div>
                     <div className="divider" style={{position:'relative',top:'200px'}}></div>
+                    <div className="mdnjndjv" style={{position:'absolute',top:'250px',left:'60px',fontSize:'40px'}}>
+                    <ul style={{listStyle:'none'}}>
+                        <li style={{marginBottom:'50px'}}>Home •</li>
+                        <li style={{marginBottom:'50px'}}>Work</li>
+                        <li style={{marginBottom:'50px'}}>About</li>
+                        <li style={{marginBottom:'50px'}}>Contact</li>
+                    </ul>
+                    </div>
                 </div>
             </div> : <></>}
+           {
+           !menuvisible?(
+                <div className='slide-up-animation'>
             <div className="bdvcbdbvh">
                 <div className="jdndv">
                     <Link
@@ -96,6 +107,9 @@ export default function EntryPage_Mobile() {
                     </Link>
                 </div>
             </div>
+            </div>
+            ):<></>
+           }
         </div>
     );
 }
