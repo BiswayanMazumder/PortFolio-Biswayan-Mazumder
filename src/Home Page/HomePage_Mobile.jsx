@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Entrypage from './Entrypage';
 import EntryPageMobileLaptop from './EntryPageMobileLaptop';
 
-export default function Homepage() {
+export default function HomepageMobile() {
   document.title = 'Biswayan Mazumder • Mobile Application & Web Developer';
 
   const [timeout, setTimeout] = useState(false);

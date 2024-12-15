@@ -8,12 +8,13 @@ import {
 import Homepage from './Home Page/homepage';
 import AboutPage from './About Page/about';
 import WorkPage from './Work Page/work';
+import HomePage_MobileLaptop from './Home Page/HomePage_MobileLaptop';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Homepage />} />
+        <Route path="/" element={<HomePage_MobileLaptop />} />
       </Routes>
       <Routes>
         <Route path="/about" element={<AboutPage />} />

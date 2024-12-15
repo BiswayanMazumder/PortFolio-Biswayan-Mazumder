@@ -645,6 +645,18 @@ body::-webkit-scrollbar{
   margin-left: 200px;
   color: #000;
 }
-
-
+.dbxbvdbvjdv{
+  display: none;
+}
+.dfjdfjjf{
+  display: flex;
+}
+@media screen and (min-width: 1135px) {
+  .dbxbvdbvjdv{
+    display: flex;
+  }
+  .dfjdfjjf{
+    display: none;
+  }
+}
 
