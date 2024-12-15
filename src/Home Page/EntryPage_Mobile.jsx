@@ -11,13 +11,16 @@ export default function EntryPage_Mobile() {
     return (
         <div className='homebody'>
             {menuvisible ? <div className='slide-up-animation'>
-                <div className="webbody" style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'start' }}>
+                <div className="webbody" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'start'}}>
                     <div className="dbvbdhv" onClick={() => setmenuvisible(false)}>
                         <svg fill="white" height="20px" width="20px" version="1.1" id="Capa_1" viewBox="0 0 490 490">
                             <polygon points="456.851,0 245,212.564 33.149,0 0.708,32.337 212.669,245.004 0.708,457.678 33.149,490 245,277.443 456.851,490 489.292,457.678 277.331,245.004 489.292,32.337 " />
                         </svg>
-
                     </div>
+                    <div className="jdnvnv" style={{ color: 'grey', fontSize: '12px',position:'relative',top:'200px' }}>
+                        Navigation
+                    </div>
+                    <div className="divider" style={{position:'relative',top:'200px'}}></div>
                 </div>
             </div> : <></>}
             <div className="bdvcbdbvh">
