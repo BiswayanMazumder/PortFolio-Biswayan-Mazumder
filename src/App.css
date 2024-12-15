@@ -659,3 +659,15 @@ body::-webkit-scrollbar{
     display: none;
   }
 }
+.dbvbdhv{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: blue;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
