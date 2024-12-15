@@ -31,14 +31,14 @@ export default function EntryPage_Mobile() {
                             className="ndnvdv"
                             style={{ marginRight: '20px' }}
                         >
-                           • Menu
+                            • Menu
                         </div>
                     </Link>
                 </div>
-                <div className="jefbhhbsvcs" style={{marginTop:'40vh'}}>
+                <div className="jefbhhbsvcs" style={{ marginTop: '40vh' }}>
                     BISWAYAN MAZUMDER
                 </div>
-                <div className="kdnfndv" style={{marginTop:'35vh',left:'50px'}}>
+                <div className="kdnfndv" style={{ marginTop: '35vh', left: '50px' }}>
                     <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1">
                         <title>arrow-up-right</title>
                         <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -51,17 +51,33 @@ export default function EntryPage_Mobile() {
                         </g>
                     </svg>
                 </div>
-                <div className='dnjndjns' style={{marginTop:'30vh',left:'50px',fontWeight:'500'}}>
+                <div className='dnjndjns' style={{ marginTop: '30vh', left: '50px', fontWeight: '500' }}>
                     Mobile App Developer
                 </div>
-                <div className='dnjndjnq' style={{marginTop:'30vh',left:'50px',fontWeight:'500'}}>
+                <div className='dnjndjnq' style={{ marginTop: '30vh', left: '50px', fontWeight: '500' }}>
                     Web Developer
                 </div>
                 <img src="https://g1uudlawy6t63z36.public.blob.vercel-storage.com/e64edd025438449584ac6c481eafa22d.png" alt="Biswayan Mazumder" height={"100%"} width={
-                '100%'
-            }/>
+                    '100%'
+                } />
             </div>
-            
+            <div className="ndbvjdbnv">
+                <div className="bhbdnvjd" style={{ alignItems: 'center',flexDirection:'column',gap:'50px' }}>
+                    <div className="mdnvnd" style={{ width: '90vw', marginTop: '-52px', fontWeight: '400', fontSize: '18px', lineHeight: '30px' }}>
+                        I craft seamless digital experiences that make an impact.
+                        Let’s push the boundaries and set new standards together.
+                        No gimmicks, just clean, cutting-edge solutions.
+                    </div>
+                    <div className="mdnvnd" style={{ width: '90vw', marginTop: '-30px', fontWeight: '400', fontSize: '15px', lineHeight: '30px' }}>
+                            The combination of my passion for design, code & interaction positions me in a unique place in the web design world.
+                        </div>
+                </div>
+                {/* <div className="ebdfbdbv">
+                <div className="mdnv">
+                            The combination of my passion for design, code & interaction positions me in a unique place in the web design world.
+                        </div>
+                </div> */}
+            </div>
         </div>
     )
 }
