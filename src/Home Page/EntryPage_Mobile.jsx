@@ -62,21 +62,22 @@ export default function EntryPage_Mobile() {
                 } />
             </div>
             <div className="ndbvjdbnv">
-                <div className="bhbdnvjd" style={{ alignItems: 'center',flexDirection:'column',gap:'50px' }}>
+                <div className="bhbdnvjd" style={{ alignItems: 'center', flexDirection: 'column', gap: '50px' }}>
                     <div className="mdnvnd" style={{ width: '90vw', marginTop: '-52px', fontWeight: '400', fontSize: '18px', lineHeight: '30px' }}>
                         I craft seamless digital experiences that make an impact.
                         Let’s push the boundaries and set new standards together.
                         No gimmicks, just clean, cutting-edge solutions.
                     </div>
-                    <div className="mdnvnd" style={{ width: '90vw', marginTop: '-30px', fontWeight: '400', fontSize: '15px', lineHeight: '30px' }}>
-                            The combination of my passion for design, code & interaction positions me in a unique place in the web design world.
+                    <div className="mdnvnd" style={{ width: '90vw', marginTop: '5px', fontWeight: '400', fontSize: '15px', lineHeight: '30px' }}>
+                        The combination of my passion for design, code & interaction positions me in a unique place in the web and mobile design world.
+                    </div>
+                    <Link style={{ textDecoration: 'none', color: 'white' }}>
+                        <div className="about" style={{marginTop:'-20px',height:'120px',width:'120px'}}>
+                            About Me
                         </div>
+                    </Link>
                 </div>
-                {/* <div className="ebdfbdbv">
-                <div className="mdnv">
-                            The combination of my passion for design, code & interaction positions me in a unique place in the web design world.
-                        </div>
-                </div> */}
+
             </div>
         </div>
     )
