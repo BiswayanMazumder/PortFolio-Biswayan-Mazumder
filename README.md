@@ -5,4 +5,4 @@ I specialize in front-end development, focusing on building responsive, interact
 
 Through this portfolio, I aim to not only showcase my technical skills but also share my journey and growth as a developer. My approach to software development is driven by a deep curiosity and the desire to solve real-world problems through technology.
 
-I hope this portfolio gives you a good understanding of my work and the technologies I use. Feel free to reach out if you’re interested in collaborating or learning more about my projects. Thank you for visiting!
+I hope this portfolio gives you a good understanding of my work and the technologies I use. Feel free to reach out if you’re interested in collaborating or learning more about my projects. Thank you for visiting! 
