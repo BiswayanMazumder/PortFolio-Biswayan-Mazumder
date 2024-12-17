@@ -5,11 +5,11 @@ export default function Entrypage() {
     document.title = 'Biswayan Mazumder • Mobile Application & Web Developer';
     const [hover, setHover] = useState(false);
     const [subject, setSubject] = useState('Greetings');
-  const [body, setBody] = useState('Hello, I wanted to reach out about...');
+    const [body, setBody] = useState('Hello, I wanted to reach out about...');
 
-  const generateMailtoLink = () => {
-    return `mailto:biswayanmazumder77@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  };
+    const generateMailtoLink = () => {
+        return `mailto:biswayanmazumder77@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    };
     return (
         <div className='homebody'>
             <div className="bdvcbdbvh">
@@ -39,10 +39,10 @@ export default function Entrypage() {
                             </div>
                         </Link>
                         <a style={{ textDecoration: 'none', color: 'white' }} href={generateMailtoLink()}>
-                        <div className='dnjndjn' style={{ fontSize: '15px' }}>
-                            Contact
-                        </div>
-                    </a>
+                            <div className='dnjndjn' style={{ fontSize: '15px' }}>
+                                Contact
+                            </div>
+                        </a>
                     </div>
 
                 </div>
@@ -153,11 +153,11 @@ export default function Entrypage() {
                     <div className="divider" style={{ position: 'relative', top: '100px' }}></div>
                 </div>
                 <Link style={{ textDecoration: 'none', color: 'black' }} to={'/work'}>
-                <div className="nnjdn">
-                    <div className="bhfjvn">
-                        More work
+                    <div className="nnjdn">
+                        <div className="bhfjvn">
+                            More work
+                        </div>
                     </div>
-                </div>
                 </Link>
             </div>
         </div>

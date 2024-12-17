@@ -4,7 +4,11 @@ import { Link } from 'react-router-dom';
 export default function EntryPage_Mobile() {
     document.title = 'Biswayan Mazumder • Mobile Application & Web Developer';
     const [hover, setHover] = useState(false);
-
+    const [subject, setSubject] = useState('Greetings');
+        const [body, setBody] = useState('Hello, I wanted to reach out about...');
+    const generateMailtoLink = () => {
+        return `mailto:biswayanmazumder77@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    };
     // Reference to the Menu button and Menu text
     const menuRef = useRef(null);
     const [menuvisible, setmenuvisible] = useState(false);
@@ -26,14 +30,14 @@ export default function EntryPage_Mobile() {
                             <li style={{ marginBottom: '50px' }}>Home •</li>
                             <li style={{ marginBottom: '50px' }}>Work</li>
                             <li style={{ marginBottom: '50px' }}>About</li>
-                            <li style={{ marginBottom: '50px' }}>Contact</li>
+                            <li style={{ marginBottom: '50px' }} onClick={generateMailtoLink}>Contact</li>
                         </ul>
                     </div>
                 </div>
             </div> : <></>}
             {
                 !menuvisible ? (
-                    <div className='slide-up-animation'>
+                    <div className='slide-up-animation' style={{ overflowX: 'hidden' }}>
                         <div className="bdvcbdbvh">
                             <div className="jdndv">
                                 <Link
@@ -160,6 +164,13 @@ export default function EntryPage_Mobile() {
                                     </div>
                                 </div>
                             </div>
+                            <Link style={{ textDecoration: 'none', color: 'black' }}>
+                                <div className="nnjdn">
+                                    <div className="bhfjvn">
+                                        More work
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 ) : <></>
