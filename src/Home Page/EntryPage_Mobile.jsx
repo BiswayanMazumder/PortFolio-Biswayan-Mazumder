@@ -166,7 +166,7 @@ export default function EntryPage_Mobile() {
                                     </div>
                                 </div>
                             </div>
-                            <Link style={{ textDecoration: 'none', color: 'black' }}>
+                            <Link style={{ textDecoration: 'none', color: 'black' }} to={'/work'}>
                                 <div className="nnjdn">
                                     <div className="bhfjvn">
                                         More work
