@@ -719,3 +719,59 @@ body::-webkit-scrollbar{
   font-size: 11px;
   margin-bottom: 30px;
 }
+.ndjvnjdvn{
+  width: 100vw;
+  height: 50px;
+  /* background-color: black; */
+  margin-top: 10px;
+}
+.ndbhbjh{
+  height: 150px;
+  width: 100vw;
+  justify-content: start;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  /* background-color: black; */
+}
+
+
+.active-tab {
+  background-color: black;
+  color: white;
+}
+
+.bhfjvns:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
+}
+.jdndjvn{
+  width: 100vw;
+  height: 400px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: #000;
+  flex-direction: column;
+}
+.hhfbhvv{
+  width: 90vw;
+  height: 200px;
+  top: 30px;
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(192, 189, 189); */
+}
+.bdbdhvbv{
+  color: #000;
+  position: absolute;
+  top: 515px;
+  font-size: 28px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  left: 30px;
+}

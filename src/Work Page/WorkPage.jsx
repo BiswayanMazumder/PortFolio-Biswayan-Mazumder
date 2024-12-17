@@ -12,7 +12,7 @@ export default function WorkPageDetails() {
   };
     return (
         <div className='webbody' style={{ backgroundColor: "white" }}>
-            <div className="jdndv" style={{ top: '0' }}>
+            <div className="jdndv" style={{ top: '0',marginLeft:'100vw' }}>
                 <Link
                     style={{ textDecoration: 'none', color: 'black' }}
                     onMouseEnter={() => setHover(true)}
@@ -52,7 +52,7 @@ export default function WorkPageDetails() {
                     </a>
                 </div>
             </div>
-            <div className="nbbfvbfv">
+            <div className="nbbfvbfv" style={{marginLeft:'100vw',marginTop:'-30px'}}>
                 <div className="ndbvbfndvb" style={{ display: 'flex', flexDirection: 'row', gap: '80px' }}>
                     <div className="bhfjvns" style={{ width: '150px', fontSize: '20px', backgroundColor: hoveredtab == 'WEBSITE' ? 'black' : 'white', color: hoveredtab == 'WEBSITE' ? 'white' : 'black' }} onClick={() => {
                         sethoveredtab('WEBSITE');
@@ -66,7 +66,7 @@ export default function WorkPageDetails() {
                     </div>
                 </div>
             </div>
-            {hoveredtab == 'WEBSITE' ? (<div className="hgvbb">
+            {hoveredtab == 'WEBSITE' ? (<div className="hgvbb" style={{marginLeft:'100vw'}}>
 
                 <div className="dnfjndjn">
                     <div className="dnndmvns">
@@ -144,7 +144,7 @@ export default function WorkPageDetails() {
                     <div className="dnndmvns">
                         <div
                             className="nndjvnjdvn"
-                            onClick={() => window.open("https://luxelayers.vercel.app", "_blank")}
+                            onClick={() => window.open("https://cryptoforge.vercel.app/", "_blank")}
                         >
                             View Site
                         </div>
@@ -176,7 +176,7 @@ export default function WorkPageDetails() {
                         Interaction, Design & Development
                     </div>
                 </div>
-            </div>) : (<div className="hgvbb">
+            </div>) : (<div className="hgvbb" style={{marginLeft:'100vw'}}>
 
                 <div className="dnfjndjn">
                     <div className="dnndmvns" style={{ fontSize: '12px', fontFamily: 'Verdana, Geneva, Tahoma, sans-serif', padding: '20px', justifyContent: 'center', alignItems: 'center', color: 'black' }}>

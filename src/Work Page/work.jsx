@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import AboutPageDetails from '../About Page/AboutPages';
 import WorkPageDetails from './WorkPage';
+import WorkPage_MobileLaptop from './WorkPage_MobileLaptop';
 
 
 export default function WorkPage() {
@@ -15,7 +16,7 @@ export default function WorkPage() {
     
   return (
    movetodetails?<div className="slide-up-animation">
-           <WorkPageDetails />
+           <WorkPage_MobileLaptop />
          </div>: <div className='slide-up-animation'>
       <div
         className="webbody"
@@ -25,6 +26,7 @@ export default function WorkPage() {
           justifyContent: 'center',
           alignItems: 'center',
           color: 'white',
+          width:'100vw'
         }}
       >
         • Work

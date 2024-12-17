@@ -28,7 +28,9 @@ export default function EntryPage_Mobile() {
                     <div className="mdnjndjv" style={{ position: 'absolute', top: '250px', left: '60px', fontSize: '40px' }}>
                         <ul style={{ listStyle: 'none' }}>
                             <li style={{ marginBottom: '50px' }}>Home •</li>
+                            <Link to={'/work'} style={{ textDecoration: 'none', color: 'white' }}>
                             <li style={{ marginBottom: '50px' }}>Work</li>
+                            </Link>
                             <li style={{ marginBottom: '50px' }}>About</li>
                             <li style={{ marginBottom: '50px' }} onClick={generateMailtoLink}>Contact</li>
                         </ul>
