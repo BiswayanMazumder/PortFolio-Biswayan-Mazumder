@@ -82,7 +82,8 @@ export default function WorkPage_Mobile() {
                             </div>
                         </div>
                         <br /><br />
-                        <div className="jdndjvn">
+                        {hoveredtab === 'WEBSITE'?<div>
+                            <div className="jdndjvn">
                             <div className="hhfbhvv">
                                 <video src="https://videos.pexels.com/video-files/17770576/17770576-uhd_2560_1440_24fps.mp4" height={'100%'} width={'100%'} fill style={{ borderRadius: '10px' }} autoPlay muted loop></video>
                             </div>
@@ -140,7 +141,7 @@ export default function WorkPage_Mobile() {
                             <div className="hhfbhvv">
                                 <video src="https://videos.pexels.com/video-files/8533112/8533112-uhd_2560_1440_25fps.mp4" height={'100%'} width={'100%'} fill style={{ borderRadius: '10px' }} autoPlay muted loop></video>
                             </div>
-                            <div className="bdbdhvbv" style={{top:'1850px'}}>
+                            <div className="bdbdhvbv" style={{top:'1830px'}}>
                                 LuxeLayers
                             </div>
                             <div className="divider" style={{ position: 'relative', top: '80px', width: '90vw' }}></div>
@@ -158,7 +159,7 @@ export default function WorkPage_Mobile() {
                             <div className="hhfbhvv">
                                 <video src="https://videos.pexels.com/video-files/4389377/4389377-uhd_2732_1440_30fps.mp4" height={'100%'} width={'100%'} fill style={{ borderRadius: '10px' }} autoPlay muted loop></video>
                             </div>
-                            <div className="bdbdhvbv" style={{top:'2290px'}}>
+                            <div className="bdbdhvbv" style={{top:'2270px'}}>
                                 CryptoForge
                             </div>
                             <div className="divider" style={{ position: 'relative', top: '80px', width: '90vw' }}></div>
@@ -176,7 +177,7 @@ export default function WorkPage_Mobile() {
                             <div className="hhfbhvv">
                                 <video src="https://videos.pexels.com/video-files/854545/854545-hd_1920_1080_25fps.mp4" height={'100%'} width={'100%'} fill style={{ borderRadius: '10px' }} autoPlay muted loop></video>
                             </div>
-                            <div className="bdbdhvbv" style={{top:'2730px'}}>
+                            <div className="bdbdhvbv" style={{top:'2710px'}}>
                                 WingedWords
                             </div>
                             <div className="divider" style={{ position: 'relative', top: '80px', width: '90vw' }}></div>
@@ -189,6 +190,116 @@ export default function WorkPage_Mobile() {
                                 </div>
                             </div>
                         </div>
+                        </div>:<div>
+                            <div className="jdndjvn">
+                            <div className="hhfbhvv">
+                                <video src="https://videos.pexels.com/video-files/17770576/17770576-uhd_2560_1440_24fps.mp4" height={'100%'} width={'100%'} fill style={{ borderRadius: '10px' }} autoPlay muted loop></video>
+                            </div>
+                            <div className="bdbdhvbv">
+                                VistaRide
+                            </div>
+                            <div className="divider" style={{ position: 'relative', top: '80px', width: '90vw' }}></div>
+                            <div className='jehehhh' style={{ position: 'relative', top: '100px', fontSize: '12px', fontWeight: '400', display: 'flex', flexDirection: 'row', gap: '10px', justifyContent: "space-between" }}>
+                                <div>
+                                    Interaction, Design & Development
+                                </div>
+                                {/* <div onClick={() => window.open("https://vistaride.vercel.app", "_blank")}>
+                                    View Site
+                                </div> */}
+                            </div>
+                        </div>
+                        <br /><br />
+                        <div className="jdndjvn">
+                            <div className="hhfbhvv">
+                                <video src="https://videos.pexels.com/video-files/4121864/4121864-hd_1280_720_25fps.mp4" height={'100%'} width={'100%'} fill style={{ borderRadius: '10px' }} autoPlay muted loop></video>
+                            </div>
+                            <div className="bdbdhvbv" style={{top:'960px'}}>
+                                VistaFeedd
+                            </div>
+                            <div className="divider" style={{ position: 'relative', top: '80px', width: '90vw' }}></div>
+                            <div className='jehehhh' style={{ position: 'relative', top: '100px', fontSize: '12px', fontWeight: '400', display: 'flex', flexDirection: 'row', gap: '10px', justifyContent: "space-between" }}>
+                                <div>
+                                    Interaction, Design & Development
+                                </div>
+                                {/* <div onClick={() => window.open("https://vistafeedd.vercel.app", "_blank")}>
+                                    View Site
+                                </div> */}
+                            </div>
+                        </div>
+                        <br /><br />
+                        <div className="jdndjvn">
+                            <div className="hhfbhvv">
+                                <video src="https://videos.pexels.com/video-files/6447692/6447692-hd_1920_1080_25fps.mp4" height={'100%'} width={'100%'}  style={{ borderRadius: '10px' }} autoPlay muted loop></video>
+                            </div>
+                            <div className="bdbdhvbv" style={{top:'1400px'}}>
+                                VidTube
+                            </div>
+                            <div className="divider" style={{ position: 'relative', top: '80px', width: '90vw' }}></div>
+                            <div className='jehehhh' style={{ position: 'relative', top: '100px', fontSize: '12px', fontWeight: '400', display: 'flex', flexDirection: 'row', gap: '10px', justifyContent: "space-between" }}>
+                                <div>
+                                    Interaction, Design & Development
+                                </div>
+                                {/* <div onClick={() => window.open("https://vidtubee.vercel.app", "_blank")}>
+                                    View Site
+                                </div> */}
+                            </div>
+                        </div>
+                        <br /><br />
+                        <div className="jdndjvn">
+                            <div className="hhfbhvv">
+                                <video src="https://videos.pexels.com/video-files/8533112/8533112-uhd_2560_1440_25fps.mp4" height={'100%'} width={'100%'} fill style={{ borderRadius: '10px' }} autoPlay muted loop></video>
+                            </div>
+                            <div className="bdbdhvbv" style={{top:'1830px'}}>
+                                LuxeLayers
+                            </div>
+                            <div className="divider" style={{ position: 'relative', top: '80px', width: '90vw' }}></div>
+                            <div className='jehehhh' style={{ position: 'relative', top: '100px', fontSize: '12px', fontWeight: '400', display: 'flex', flexDirection: 'row', gap: '10px', justifyContent: "space-between" }}>
+                                <div>
+                                    Interaction, Design & Development
+                                </div>
+                                {/* <div onClick={() => window.open("https://luxelayers.vercel.app", "_blank")}>
+                                    View Site
+                                </div> */}
+                            </div>
+                        </div>
+                        <br /><br />
+                        <div className="jdndjvn">
+                            <div className="hhfbhvv">
+                                <video src="https://videos.pexels.com/video-files/4389377/4389377-uhd_2732_1440_30fps.mp4" height={'100%'} width={'100%'} fill style={{ borderRadius: '10px' }} autoPlay muted loop></video>
+                            </div>
+                            <div className="bdbdhvbv" style={{top:'2270px'}}>
+                                CryptoForge
+                            </div>
+                            <div className="divider" style={{ position: 'relative', top: '80px', width: '90vw' }}></div>
+                            <div className='jehehhh' style={{ position: 'relative', top: '100px', fontSize: '12px', fontWeight: '400', display: 'flex', flexDirection: 'row', gap: '10px', justifyContent: "space-between" }}>
+                                <div>
+                                    Interaction, Design & Development
+                                </div>
+                                {/* <div onClick={() => window.open("https://cryptoforge.vercel.app/", "_blank")}>
+                                    View Site
+                                </div> */}
+                            </div>
+                        </div>
+                        <br /><br />
+                        <div className="jdndjvn">
+                            <div className="hhfbhvv">
+                                <video src="https://videos.pexels.com/video-files/854545/854545-hd_1920_1080_25fps.mp4" height={'100%'} width={'100%'} fill style={{ borderRadius: '10px' }} autoPlay muted loop></video>
+                            </div>
+                            <div className="bdbdhvbv" style={{top:'2710px'}}>
+                                WingedWords
+                            </div>
+                            <div className="divider" style={{ position: 'relative', top: '80px', width: '90vw' }}></div>
+                            <div className='jehehhh' style={{ position: 'relative', top: '100px', fontSize: '12px', fontWeight: '400', display: 'flex', flexDirection: 'row', gap: '10px', justifyContent: "space-between" }}>
+                                <div>
+                                    Interaction, Design & Development
+                                </div>
+                                {/* <div onClick={() => window.open("https://wingedword.vercel.app/", "_blank")}>
+                                    View Site
+                                </div> */}
+                            </div>
+                        </div>
+                        
+                        </div>}
                     </div>
                 ) : <></>
             }

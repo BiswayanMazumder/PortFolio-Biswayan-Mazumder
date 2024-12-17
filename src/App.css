@@ -775,3 +775,13 @@ body::-webkit-scrollbar{
   font-weight: 500;
   left: 30px;
 }
+/* Add this CSS to your stylesheet */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.fade-in-visible {
+  opacity: 1;
+}
+
