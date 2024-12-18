@@ -19,7 +19,7 @@ export default function AboutPageDetails() {
   };
     return (
         <div className='webbody' style={{ backgroundColor: "white" }}>
-            <div className="jdndv" style={{ top: '0' }}>
+            <div className="jdndv" style={{ top: '0',marginLeft:'100vw' }}>
                 <Link
                     style={{ textDecoration: 'none', color: 'black' }}
                     onMouseEnter={() => setHover(true)}

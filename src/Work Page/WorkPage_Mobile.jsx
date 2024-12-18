@@ -31,7 +31,9 @@ export default function WorkPage_Mobile() {
                                 <li style={{ marginBottom: '50px' }}>Home</li>
                             </Link>
                             <li style={{ marginBottom: '50px' }}>Work •</li>
+                            <Link to={'/about'} style={{ textDecoration: 'none', color: 'white' }}>
                             <li style={{ marginBottom: '50px' }}>About</li>
+                            </Link>
                             <li style={{ marginBottom: '50px' }} onClick={generateMailtoLink}>Contact</li>
                         </ul>
                     </div>

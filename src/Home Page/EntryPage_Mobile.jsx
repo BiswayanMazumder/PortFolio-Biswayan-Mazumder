@@ -31,7 +31,9 @@ export default function EntryPage_Mobile() {
                             <Link to={'/work'} style={{ textDecoration: 'none', color: 'white' }}>
                             <li style={{ marginBottom: '50px' }}>Work</li>
                             </Link>
+                            <Link to={'/about'} style={{ textDecoration: 'none', color: 'white' }}>
                             <li style={{ marginBottom: '50px' }}>About</li>
+                            </Link>
                             <li style={{ marginBottom: '50px' }} onClick={generateMailtoLink}>Contact</li>
                         </ul>
                     </div>
